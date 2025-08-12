@@ -12,7 +12,29 @@ File chính **`process_all.py`** sẽ:
 ---
 
 ## 📂 Cấu trúc thư mục & file
+├── clean_data.csv # Dữ liệu đã xử lý và làm sạch
 
+├── process_all.py # File xử lý chính: HTML -> CSV sạch
+
+├── process_1_row.py # File xử lý thử cho 1 thí sinh (phục vụ kiểm tra logic ban đầu)
+
+├── exception.txt # Danh sách SBD không hợp lệ (dùng trong process_all.py)
+
+├── unicode.txt # Bảng chuyển ký tự lỗi sang tiếng Việt chuẩn (dùng trong process_all.py)
+
+├── Vẽ biểu đồ/ # Thư mục chứa các file Python để vẽ biểu đồ
+
+│ ├── plot1_SoHS_bo_thi.py # Biểu đồ cột: Số học sinh bỏ thi của từng môn
+
+│ ├── plot2_So_mon_hs_thi.py # Biểu đồ tròn: Phân bố số môn mà học sinh thi (vd: thi 5 môn = 30%)
+
+│ ├── plot3_DiemTB_theo_mon.py # Biểu đồ cột: Điểm trung bình của học sinh theo từng môn
+
+│ ├── plot4_DiemTB_theo_tuoi.py # Biểu đồ cột + đường: Điểm trung bình từng môn theo nhóm tuổi
+
+│ └── plot5_20HoPhoBien.py # Biểu đồ: 20 họ phổ biến nhất của học sinh tham gia kỳ thi
+
+└── README.md # Mô tả dự án
 ---
 
 ## 📊 Biểu đồ trực quan hóa
@@ -27,6 +49,29 @@ File chính **`process_all.py`** sẽ:
 ## 🛠 Yêu cầu
 Cài đặt Python và các thư viện cần thiết:
 ```bash
-pip install pandas matplotlib
+  pip install pandas matplotlib
+```
+
+
+## 🚀 Cách chạy
+1. Xử lý toàn bộ dữ liệu HTML thành dữ liệu sạch
+```bash
+    python process_all.py
+```
+2. (Tuỳ chọn) Kiểm tra xử lý cho 1 thí sinh
+```bash
+    python process_1_row.py
+```
+3. Vẽ biểu đồ
+Chạy file Python tương ứng trong thư mục Vẽ biểu đồ/, ví dụ:
+  ```bash
+    python "Vẽ biểu đồ/plot1_SoHS_bo_thi.py"
+  ```
+📌 Ghi chú
+  exception.txt và unicode.txt là dữ liệu hỗ trợ cho quá trình xử lý trong process_all.py.
+
+👤 Tác giả: Huỳnh Hải Hiền
+
+👤 Giáo viên hướng dẫn: Lại Tuấn Dũng
 
 
