@@ -12,6 +12,9 @@ File chính **`process_all.py`** sẽ:
 ---
 
 ## 📂 Cấu trúc thư mục & file
+
+├── draw_data.txt # Dữ liệu thô sau khi crawl từ web
+
 ├── clean_data.csv # Dữ liệu đã xử lý và làm sạch
 
 ├── process_all.py # File xử lý chính: HTML -> CSV sạch
@@ -37,6 +40,14 @@ File chính **`process_all.py`** sẽ:
 └── README.md # Mô tả dự án
 ---
 
+# 💾 Dữ liệu lớn
+
+File `draw_data.txt` quá lớn để upload lên GitHub (>100MB).  
+Bạn có thể tải file này từ Google Drive:
+
+[draw_data.txt]([https://drive.google.com/your-shared-link](https://drive.google.com/file/d/1B0JyN7517X2zA5vNKyil5W6Yhl7fSdpG/view?usp=drive_link))
+
+Sau khi tải về, giải nén vào thư mục dự án để sử dụng.
 ## 📊 Biểu đồ trực quan hóa
 1. **plot1_SoHS_bo_thi.py** → Biểu đồ cột thể hiện số lượng học sinh bỏ thi của từng môn.
 2. **plot2_So_mon_hs_thi.py** → Biểu đồ tròn thể hiện tỷ lệ số môn học sinh đăng ký thi (ví dụ: thi 5 môn chiếm 30%).
