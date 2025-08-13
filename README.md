@@ -21,7 +21,7 @@ File chính **`process_all.py`** sẽ:
 
 ├── process_1_row.py # File xử lý thử cho 1 thí sinh (phục vụ kiểm tra logic ban đầu)
 
-├── exception.txt # Danh sách SBD không hợp lệ (dùng trong process_all.py)
+├── exception.txt # Danh sách SBD không hợp lệ (dùng để tham khảo)
 
 ├── unicode.txt # Bảng chuyển ký tự lỗi sang tiếng Việt chuẩn (dùng trong process_all.py)
 
